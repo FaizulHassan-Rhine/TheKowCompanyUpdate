@@ -69,7 +69,7 @@ const ShoeModel = () => {
       {console.log("testing : " + cursorIs)}
       <Canvas
        
-        camera={{ fov: 45, position: [-10, 20, -90]}}
+        camera={{ fov: 30, position: [80, 90, -80]}}
       >
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[10, 10, 10]} />

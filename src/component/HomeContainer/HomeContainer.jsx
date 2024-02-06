@@ -39,7 +39,7 @@ function HomeContainer() {
                     videoUrl="/video/The Kow Company_video.mp4"
                     loadingImg="/video/loading-image.png"
                     tagList={tagList} />
-
+              
                 <WelcomePage />
                 <ThreeDModelContainer />
                 <DivSliderParrent />

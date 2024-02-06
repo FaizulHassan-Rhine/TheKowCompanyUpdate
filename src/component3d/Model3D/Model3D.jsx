@@ -1,4 +1,5 @@
 
+import { Suspense } from "react";
 import Heading from "../Heading/Heading";
 
 import ShoeModel from "../ProductVisualization3d/Furniture/Model/ShoeModel";
@@ -21,7 +22,12 @@ const Model3D = () => {
               imageList={showImageList}
             ></ViewModel> */}
    
-           <ShoeModel/>
+   <Suspense fallback={<div className="flex justify-center items-center pt-10 ">
+  <img src="/public/img/shoe2.png"/>
+   </div>}>
+                <ShoeModel/>
+             
+            </Suspense>
           </div>
         </div>
       </div>
