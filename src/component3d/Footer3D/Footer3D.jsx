@@ -63,7 +63,7 @@ const Footer3D = () => {
                         <span className="text-xl font-semibold mb-2 ">HOME</span>
                         <HashLink to="/3D#3d-services" className="link link-hover text-sm">Services</HashLink>
                         <HashLink to="/3d#3d-trends" className="link link-hover text-sm">3D Trends</HashLink>
-                        <HashLink  to="/3d#3d-contact" className="link link-hover text-sm">Contact us</HashLink>
+                        {/* <HashLink  to="/3d#3d-contact" className="link link-hover text-sm">Contact us</HashLink> */}
                       
                  
                     </div>

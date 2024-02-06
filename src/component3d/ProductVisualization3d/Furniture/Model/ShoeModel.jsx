@@ -68,7 +68,7 @@ const ShoeModel = () => {
     <div className="h-[300px] md:h-[500px] ">
       {console.log("testing : " + cursorIs)}
       <Canvas
-       
+       className="cursor-pointer"
         camera={{ fov: 30, position: [80, 90, -80]}}
       >
         <ambientLight intensity={Math.PI / 2} />

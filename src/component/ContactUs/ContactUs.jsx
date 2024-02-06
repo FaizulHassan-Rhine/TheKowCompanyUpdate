@@ -54,7 +54,7 @@ export default function Contact() {
                                 <p className="text-3xl font-bold text-white">GET IN TOUCH WITH US</p>
                                 {/* <p className="text-xl  text-white">Contact us</p> */}
                             </div>
-                            <form onSubmit={sendEmail} className="w-[450px] flex flex-col">
+                            <form onSubmit={sendEmail} className="w-[350px] sm:w-[400px] md:w-[450px] flex flex-col">
                                 <div className="flex flex-col gap-3">
                                     <div id="nameid" className="flex flex-col">
                                         <input
