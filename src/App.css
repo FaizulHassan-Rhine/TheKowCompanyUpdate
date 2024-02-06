@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+html,body{
+  font-family: 'Roboto Condensed', sans-serif;
+  scroll-behavior: smooth;
+}
+/* --------------image ratio--------- */
+.img-container {
+  display: block;
+  position: relative;
+  /* padding-top: 50%; */
+}
+
+.img-bag {
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*-------------- image animation ------------------- */
+.img-container:hover::before {
+  width: 150px;
+  height: 120px;
+  opacity: 1;
+  z-index: 10;
+  visibility: visible;
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  left: 8px;
+  top: 8px;
+  border-left: 2px solid white;
+  border-top: 2px solid white;
+}
+
+.img-container:hover::after {
+  width: 150px;
+  height: 120px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.img-container::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  right: 8px;
+  bottom: 8px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+}
+/* ------------------button add------------------- */
+.view-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 4px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  text-transform: uppercase;
+}
+.view-button {
+  width: 100px;
+  color: white;
+  background-color: #02b989;
+
+  padding: 2px;
+  text-align: center;
+}
+
+.img-container:hover .view-content {
+  opacity: 1;
+  z-index: 10;
+}
+.img-container:hover .blank {
+  visibility: visible;
+  opacity: 0.5;
+}
+.blank {
+  position: absolute;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#imgPopupWrap::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: black;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: 0.6;
+}
+
+.product-container {
+  width: 90%;
+  margin: auto;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  /* background: #3c3c3c; */
+  padding: 20px;
+}
+.closeBtn {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  padding: 14px;
+  background: white;
+  line-height: 0;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.bgshadow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+}
+
+.bgImage {
+	background-image: url("./circle-bg.svg");
+	background-attachment: fixed;
+	min-height: 100%;
+	background-size: 466px;
+	background-repeat: no-repeat;
+	background-position: 110% -63px;
+}
+
+.bgImage-2 {
+	background-image: url("./img/3d/round-shape.png");
+	background-attachment: fixed;
+	min-height: 100%;
+	background-size: 466px;
+	background-repeat: no-repeat;
+	background-position: 110% -63px;
+}
+
+
+
+/*after before image */
+
+#eccId_id_1011,#eccId_id_10115, .imageCompareWrap  {height: 100% !important;}
+#eccId_id_1011 [data-testid="container"],#eccId_id_10115 [data-testid="container"],.imageCompareWrap [data-testid="container"]{height: 100% !important;}
+#id_1011 div,#id_10115 div {height: 100%;}
+
+
+
+/* Blog Background Image */
+.blog-bg-img{
+  background-image: url("/public/img/Blog-Images/blog-bangladesh.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 80vh;
+}
+.cover-bg-1{
+  background-image: url("/public/img/Blog-Images/coverPhoto1.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 80vh;
+  filter: blur(2px);
+}
+
+/* .circle-bg{
+  background-image: url("/public/img/Blog-Images/circle.png");
+  background-repeat: no-repeat;
+ background-size: 100px;
+ height: 50vh;
+ background-position: 0 0 ;
+} */
+
+
+.contact-bg{
+  background-image: url("/public/img/3d/bg-2.jpg");
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
