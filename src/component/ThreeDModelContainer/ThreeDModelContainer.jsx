@@ -2,6 +2,7 @@ import React from 'react';
 import ViewModel from '../ViewModel/ViewModel';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import ShoeModel from '../../component3d/ProductVisualization3d/Furniture/Model/ShoeModel';
 
 const ThreeDModelContainer = () => {
 
@@ -117,7 +118,8 @@ const ThreeDModelContainer = () => {
                     </div>
                         </div>
                         <div className='h-[320px] md:h-[500px] w-full md:w-[570px]'>
-                            <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel>
+                            <ShoeModel/>
+                            {/* <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel> */}
                         </div>
                     </div>
                 </div>
