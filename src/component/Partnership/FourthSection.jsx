@@ -7,10 +7,10 @@ const FourthSection = () => {
             <div  >
                 <div className='fourth-section-container'>
                     <div className='fourth-section-button'>
-                        <a href='https://kowstudios.com/' target='_blank' rel="noreferrer">Visit KOW Studio</a>
+                        <Link to="/3d">Explore 3D</Link>
                     </div>
                     <div className='fourth-section-button'>
-                        <Link to='/contact-us' target="_blank">Request a Quote</Link>
+                        <Link to='/contact-us'>Request a Quote</Link>
                     </div>
                 </div>
             </div>

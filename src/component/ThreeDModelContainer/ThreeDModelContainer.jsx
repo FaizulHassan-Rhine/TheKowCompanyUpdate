@@ -121,9 +121,9 @@ const ThreeDModelContainer = () => {
                     </div>
                         </div>
                         <div className='h-[320px] md:h-[500px] w-full md:w-[570px]'>
-                            <Suspense fallback={<div className='flex justify-center pt-10 pl-5 items-center'>
+                            <Suspense fallback={<div className='flex justify-center  items-center'>
                             {/* <span className="loader">Load&nbsp;ng</span> */}
-                            <img src='/public/img/shoe.png'/>
+                            <img className='md:mt-16 md:ml-2' src='/img/shoe.png'/>
                             </div>}>
                 <ShoeModel/>
              

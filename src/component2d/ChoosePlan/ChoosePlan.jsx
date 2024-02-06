@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Heading2D from "../../component3d/Heading/Heading2D";
 import { BsCircleFill } from "react-icons/bs";
 const ChoosePlan = () => {
@@ -52,9 +53,11 @@ const ChoosePlan = () => {
     
                     </div>
                     <div className="flex justify-center items-center leading-4">
+                      <Link to={"/contact-us"}>
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
                         ORDER NOW
                       </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -98,9 +101,11 @@ const ChoosePlan = () => {
   
                     </div>
                     <div className="flex justify-center items-center leading-4">
+                    <Link to={"/contact-us"}>
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
                         ORDER NOW
                       </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -145,9 +150,11 @@ const ChoosePlan = () => {
     
                     </div>
                     <div className="flex justify-center items-center leading-4">
+                    <Link to={"/contact-us"}>
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
                         ORDER NOW
                       </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
