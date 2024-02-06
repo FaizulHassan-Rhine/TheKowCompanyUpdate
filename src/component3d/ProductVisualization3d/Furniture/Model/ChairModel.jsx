@@ -4,7 +4,7 @@ import { useGLTF, PerspectiveCamera, OrbitControls } from "@react-three/drei";
 import { HexColorPicker } from "react-colorful";
 
 const ChairModel = () => {
-  const { nodes, materials } = useGLTF("/demo2.glb");
+  const { nodes, materials } = useGLTF("/chair.glb");
   // Cursor showing current color
   const [hovered, set] = useState(null);
   const [cursorIs, setCursorIs] = useState(false);

@@ -19,7 +19,7 @@ const VisualizationSliderStatic = () => {
               <h5 className="text-black font-semibold">
                 INTERIOR VISUALIZATION
               </h5>
-              <img className="h-6 z-30" src="/public/img/3d/slider/view.png" />
+              <img className="h-6 z-30" src="/img/3d/slider/view.png" />
             </div>
           </div>
           </Link>
@@ -35,7 +35,7 @@ const VisualizationSliderStatic = () => {
               <h5 className="text-black font-semibold">
                 EXTERIOR VISUALIZATION
               </h5>
-              <img className="h-6 z-30" src="/public/img/3d/slider/view.png" />
+              <img className="h-6 z-30" src="/img/3d/slider/view.png" />
             </div>
           </div>
           </Link>
@@ -49,7 +49,7 @@ const VisualizationSliderStatic = () => {
             </div>
             <div className="w-full flex gap-3 justify-center pt-2 ">
               <h5 className="text-black font-semibold">VR RENDERING</h5>
-              <img className="h-6 z-30" src="/public/img/3d/slider/view.png" />
+              <img className="h-6 z-30" src="/img/3d/slider/view.png" />
             </div>
           </div>
           </Link>
