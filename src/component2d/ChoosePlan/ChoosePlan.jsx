@@ -1,5 +1,5 @@
 import Heading2D from "../../component3d/Heading/Heading2D";
-
+import { BsCircleFill } from "react-icons/bs";
 const ChoosePlan = () => {
   return (
     <div id="price">
@@ -32,11 +32,24 @@ const ChoosePlan = () => {
                     <div className="p-[4px] border-[1px] border-solid border-[#666666] rounded-full">
                       <div className="bg-[#B1CC40] p-1 rounded-full"></div>
                     </div>
-                    <div className="flex flex-col items-center">
-                      <h1 className="text-[12px]">1-100 IMAGES/ORDER</h1>
+                    <div className="flex flex-col items-start">
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
+                    <h1 className="text-[12px]">1-100 IMAGES/ORDER</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">10 IMAGES-FREE</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">1 MONTH FREE STORAGE</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">24/7 CUSTOMER SUPPORT</h1>
+                    </div>
+    
                     </div>
                     <div className="flex justify-center items-center leading-4">
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
@@ -64,11 +77,25 @@ const ChoosePlan = () => {
                     <div className="p-[4px] border-[1px] border-solid border-[#666666] rounded-full">
                       <div className="bg-[#B1CC40] p-1 rounded-full"></div>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-start">
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">101-500 IMAGES/ORDER</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">10 IMAGES-FREE</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">2 MONTH FREE STORAGE</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">24/7 CUSTOMER SUPPORT</h1>
+                    </div>
+                      
+  
                     </div>
                     <div className="flex justify-center items-center leading-4">
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
@@ -98,11 +125,24 @@ const ChoosePlan = () => {
                     <div className="p-[4px] border-[1px] border-solid border-[#666666] rounded-full">
                       <div className="bg-[#B1CC40] p-1 rounded-full"></div>
                     </div>
-                    <div className="flex flex-col items-center">
+                    <div className="flex flex-col items-start">
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">1-100 IMAGES/ORDER</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">10 IMAGES-FREE</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">1 MONTH FREE STORAGE</h1>
+                    </div>
+                    <div className="flex justify-center items-center gap-2">
+                      < BsCircleFill className="w-2 h-2" />
                       <h1 className="text-[12px]">24/7 CUSTOMER SUPPORT</h1>
+                    </div>
+    
                     </div>
                     <div className="flex justify-center items-center leading-4">
                       <button className="bg-[#B1CC40] text-white font-semibold text-[12px] px-4 py-1 rounded-3xl">
