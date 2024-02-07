@@ -22,6 +22,7 @@ import ThreeDModelContainer from '../ThreeDModelContainer/ThreeDModelContainer'
 import NavbarHome from '../navber/navbarHome'
 import ProductVisualSlider from '../../component3d/Product/ProductVisualSlider'
 import ProductVideoLatestMother from '../ProductVideo/ProductVideoLatestMother'
+import GetUpdateOld from '../GetUpdate/GetUpdateOld'
 
 function HomeContainer() {
 
@@ -53,7 +54,8 @@ function HomeContainer() {
                 <BluePrint />
                 <IndustryTrends />
                 {/* <VirtualTour /> */}
-                <GetUpdate />
+                {/* <GetUpdate /> */}
+                <GetUpdateOld/>
             </div>
             <Footer />
 

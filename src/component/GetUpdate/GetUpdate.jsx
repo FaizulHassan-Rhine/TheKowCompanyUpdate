@@ -1,19 +1,25 @@
-// import { useState } from "react";
+import { useState } from "react";
+import { useForm } from 'react-hook-form';
+import Modal from "../PopupModal/PopupModal";
 
 const GetUpdate = () => {
-//   const [email, setEmail] = useState("");
-//   const [isValid, setIsValid] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
+  
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+  
+  const handleModalClose = () => {
+    setModalOpen(false);
+  };
 
-//   const handleChange = (e) => {
-//     setEmail(e.target.value);
-//     setIsValid(validateEmail(e.target.value));
-//   };
-
-//   const validateEmail = (email) => {
-//     // Regular expression for email validation
-//     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//     return regex.test(email);
-//   };
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  
+  const onSubmit = (data) => {
+    if (!errors.email) { // Check if there are no errors for the email field
+      handleModalOpen(); // Open the modal if email is valid
+    }
+  };
 
   return (
     <div id="subscribe">
@@ -26,43 +32,38 @@ const GetUpdate = () => {
             </h1>
             <h1 className="w-[70px] sm:w-[400px] border-b border-[#7C9C30]"></h1>
           </div>
-          <p className=" text-center text-sm">
+          <p className="text-center text-sm">
             Sign up for our mailing list and we will let you know when we{" "}
           </p>
-          <p className=" text-center text-sm mb-6">
+          <p className="text-center text-sm mb-6">
             release new features or updates.
           </p>
 
-          {/* <div className="text-xs flex justify-center pb-2">
-            {!isValid && <p style={{ color: 'red' }}>Please enter a valid email address</p>}
-            </div> */}
-          <div
-            className="flex justify-between mb-3 p-2 w-80 shadow-md bg-white absolute left-[50%] rounded-3xl border-gray-800 border-1"
-            style={{ transform: "translateX(-50%)" }}
-          >
-            <input
-              type="email"
-            //   value={email}
-            //   onChange={handleChange}
-            //   style={{ borderColor: isValid ? "green" : "red" }}
-           
-              className="border-none pl-4 focus:outline-none text-sm text-black  w-48"
-              placeholder="Enter your mail"
-            />
-           
-            <a
-              className="cursor-pointer"
-              href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="rounded-3xl text-white py-2 font-semibold px-4 text-sm bg-[#7C9C30]">
-                Subscribe
-              </button>
-            </a>
+          <div className="flex justify-center text-sm mt-5 mb-1"> 
+          {(errors.email && errors.email.type === "required") && <span className="text-green-600 font-semibold">Email is required</span>}
+  {(errors.email && errors.email.type === "pattern") && <span className="text-red-600 font-semibold">Invalid Email Address</span>}
+          </div>
+          <div className="flex items-center justify-center ">
+            <div className="flex justify-between  py-2 pr-2 pl-4  shadow-md bg-white rounded-3xl border-gray-800 border-1">
+              <form onSubmit={handleSubmit(onSubmit)}>
+                <input
+                className="outline-none text-sm w-[200px]"
+                  type="text"
+                  autoComplete="off"
+                  placeholder="Email"
+                  {...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i })}
+                />
+               
+               <button type="submit" className="rounded-3xl text-white   py-2 font-semibold px-4 text-sm bg-[#7C9C30]">
+                  Subscribe
+                </button>
+              </form>
+             
+            </div>
           </div>
         </div>
       </div>
+      <Modal isOpen={modalOpen} onClose={handleModalClose} />
     </div>
   );
 };
