@@ -17,7 +17,7 @@ const Modal = ({ isOpen, onClose }) => {
               </button>
             </div>
            <div className="text-sm text-center font-semibold">
-            <h1>We have received you mail address.</h1>
+            <h1>We have received your mail address.</h1>
             <h1>Please check your email to explore our newsletter.</h1>
            </div>
           </div>

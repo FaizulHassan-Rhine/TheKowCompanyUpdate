@@ -54,8 +54,8 @@ function HomeContainer() {
                 <BluePrint />
                 <IndustryTrends />
                 {/* <VirtualTour /> */}
-                {/* <GetUpdate /> */}
-                <GetUpdateOld/>
+                <GetUpdate />
+                {/* <GetUpdateOld/> */}
             </div>
             <Footer />
 
