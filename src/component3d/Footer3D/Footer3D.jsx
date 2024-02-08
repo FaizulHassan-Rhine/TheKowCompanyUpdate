@@ -74,7 +74,7 @@ const Footer3D = () => {
                         <Link to="/privacy-policy" className=" text-sm">Privacy Policy</Link>
                         <Link to="/terms-condition" className=" text-sm">Terms & Conditions</Link>
                         <Link to="/contact-us" className=" text-sm">Contact us</Link>
-                        <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="text-sm cursor-pointer" rel="noreferrer">SIGN UP</a>
+                        {/* <a href="https://app.cutoutwiz.com/Identity/Account/Login?ReturnUrl=%2F" target="_blank" className="text-sm cursor-pointer" rel="noreferrer">SIGN UP</a> */}
                     </div>
                     <div className="text-center flex flex-col items-center  md:ml-0 lg:ml-0">
                         <span className="font-bold text-[#333333] text-xl w-full text-center  md:mb-4 md:ml-8 lg:-ml-16">
