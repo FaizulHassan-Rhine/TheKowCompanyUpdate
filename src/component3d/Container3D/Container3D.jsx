@@ -9,12 +9,13 @@ import ProductVisualization from '../Product/ProductVisualization';
 import ProductVisualSlider from '../Product/ProductVisualSlider';
 import Model3D from '../Model3D/Model3D';
 import Trends3D from '../Trends3D/Trends3D';
-import Contact3D from '../Contact3D/Contact3D';
+// import Contact3D from '../Contact3D/Contact3D';
 import Footer3D from '../Footer3D/Footer3D';
 import Video3D from '../Video3D/Video3D';
 import ScrolTop from '../../component/ScrolTop/ScrolTop';
 import ProductVideoLatest from '../../component/ProductVideo/ProductVideoLatest';
 import VisualizationSliderStatic from '../Visualization/VisualizationSliderStatic';
+import GetUpdate3D from '../GetUpdate3D/GetUpdate3D';
 
 
 const Container3D = () => {
@@ -39,8 +40,8 @@ const Container3D = () => {
                 <Model3D />
                 <Trends3D />
                 <Video3D />
-
-                <Contact3D />
+                <GetUpdate3D/>
+                {/* <Contact3D /> */}
             </dov>
 
             <Footer3D />

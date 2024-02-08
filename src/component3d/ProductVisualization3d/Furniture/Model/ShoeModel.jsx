@@ -1,10 +1,14 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import React, { useEffect, useState } from "react";
-import { useGLTF, PerspectiveCamera, OrbitControls } from "@react-three/drei";
+import { useGLTF, PerspectiveCamera, OrbitControls, useTexture, Box } from "@react-three/drei";
 import { HexColorPicker } from "react-colorful";
+import { TextureLoader } from "three";
+
 
 const ShoeModel = () => {
-  const { nodes, materials } = useGLTF("/shoe.glb");
+
+
+  const { nodes, materials } = useGLTF("/shoeUpdate2.glb");
   // Cursor showing current color
   const [hovered, set] = useState(null);
   const [cursorIs, setCursorIs] = useState(false);
@@ -23,6 +27,7 @@ const ShoeModel = () => {
           <mesh
             key={index}
             geometry={geometry}
+        
             material={materials[material.name]}
             onPointerOver={(e) => (
               e.stopPropagation(),
@@ -38,14 +43,17 @@ const ShoeModel = () => {
             // onClick={(event) => (console.log(event), event.object.material.color.set(0xce2020))}
             // onClick={(event) => (console.log(event), renderColors(event))}
             onClick={(event) => (console.log(event), setModelObject(event))}
-          ></mesh>
+          >
+
+
+
+          </mesh>
         );
       }
       return null;
     });
   };
 
- 
 
 
   // useEffect(() => {
@@ -65,15 +73,16 @@ const ShoeModel = () => {
   // }, [colors, hovered, cursorIs]);
 
   return (
-    <div className="h-[300px] md:h-[500px] ">
+    <div className="h-[300px] md:h-[600px]  ">
       {console.log("testing : " + cursorIs)}
       <Canvas
        className="cursor-pointer"
-        camera={{ fov: 30, position: [80, 90, -80]}}
+        camera={{ fov: 35, position: [80, 90, -80]}}
       >
         <ambientLight intensity={Math.PI / 2} />
         <pointLight position={[10, 10, 10]} />
         <OrbitControls />
+     
         <group scale={[2, 2, 2]}>{renderNodes(nodes)}</group>
       </Canvas>
 

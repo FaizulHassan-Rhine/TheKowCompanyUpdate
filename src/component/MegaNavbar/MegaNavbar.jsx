@@ -12,13 +12,13 @@ const MegaNavbar = () => {
       {/* <div className="bg-[#DEE2E2] font-sans w-full min-h-screen m-0"> */}
       <div className="bg-[black]   w-full top-0 z-[999]  shadow-xl md:shadow-none">
         <div className="container mx-auto py-1">
-          <div className="flex items-center  gap-16">
-            <Link to={"/"}>
+          <div className="flex items-center py-1 gap-16 ml-2">
+            {/* <Link to={"/"}>
               <img src={logo}
                 width={60}
                 height={30}
                 alt="logo" />
-            </Link>
+            </Link> */}
             {/* --------------------------------------For Large Screen------------------------------------------ */}
             {/* <div className="hidden md:flex sm:items-center md:gap-1 lg:gap-8 xl:gap-12"> */}
             <Link to="/2d" className="text-white text-xs    font-semibold">IMAGES</Link>

@@ -42,7 +42,7 @@ const ProductVisualSlider = () => {
     return (
         <div className=' py-6' >
             <div>
-
+            <Heading className="pt-12 pb-7 md:pt-12 md:pb-16" titleClassName="w-[1500px]" title="PRODUCT VISUALIZATION" />
                 <div className='2xl:container 2xl:mx-auto '>
                     <div className='relative w-full '>
                         <Carousel uniqueId="id_125" delay={5000}
@@ -75,7 +75,7 @@ const ProductVisualSlider = () => {
                     </div>
                 </div>
             </div>
-            <Heading className="pt-12 pb-7" titleClassName="w-[1500px]" title="PRODUCT VISUALIZATION" />
+            
 
         </div>
     );

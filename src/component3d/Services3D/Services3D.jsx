@@ -23,6 +23,7 @@ const Services3D = () => {
     ]
     return (
         <div id='3d-services'>
+            <Heading title={'SERVICES'} className="py-10"/>
             <div className='container mx-auto'>
                 <div className='flex flex-col gap-3'>
                     <div className='grid grid-cols-1 md:grid-cols-3 items-center pt-8 pb-4 gap-5' >
@@ -32,7 +33,7 @@ const Services3D = () => {
                     </div>        
                 </div>
             </div>
-            <Heading title={'SERVICES'} className="py-10"/>
+            
         </div>
     );
 };

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import ShoeModel from '../../component3d/ProductVisualization3d/Furniture/Model/ShoeModel';
 
+
+
 const ThreeDModelContainer = () => {
 
     // const showImageList = [
@@ -123,10 +125,10 @@ const ThreeDModelContainer = () => {
                         <div className='h-[320px] md:h-[500px] w-full md:w-[570px]'>
                             <Suspense fallback={<div className='flex justify-center  items-center'>
                             {/* <span className="loader">Load&nbsp;ng</span> */}
-                            <img className='md:mt-16 md:ml-2' src='/img/shoe.png'/>
+                            <img className='md:mt-16 md:ml-2' src='/img/shoeLogo.png'/>
                             </div>}>
-                <ShoeModel/>
              
+             <ShoeModel/>
             </Suspense>
                             {/* <ViewModel imgSample={'/model_image/w-Camera_frame01 copy.png'} imageList={showImageList}></ViewModel> */}
                         </div>

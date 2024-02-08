@@ -4,7 +4,12 @@ import { Link } from "react-router-dom";
 import Heading from "../Heading/Heading";
 const VisualizationSliderStatic = () => {
   return (
-    <div className="bg-[#f1f4ed] py-6">
+    <div className="bg-[#f1f4ed] py-3">
+      <Heading
+        className="pt-12 pb-10"
+        titleClassName="w-[1500px]"
+        title="ARCHITECTURAL VISUALIZATION"
+      />
       <div className="2xl:container mx-auto">
         <div className="flex flex-col md:flex-row justify-items-center justify-center ">
           <Link to="/interior-visualization">
@@ -55,11 +60,7 @@ const VisualizationSliderStatic = () => {
           </Link>
         </div>
       </div>
-      <Heading
-        className="pt-12 pb-7"
-        titleClassName="w-[1500px]"
-        title="ARCHITECTURAL VISUALIZATION"
-      />
+      
     </div>
   );
 };

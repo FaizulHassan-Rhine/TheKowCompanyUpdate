@@ -10,6 +10,11 @@ const Model3D = () => {
 
   return (
     <div className=" ">
+       <Heading
+        className="md:pt-12 md:pb-7"
+        titleClassName="w-[500px]"
+        title="3D MODEL"
+      />
       <div className="2xl:container 2xl:mx-auto">
         {/* <div className='flex justify-center'>
                     <img className='w-[350px]' src='/img/3d/chair.png' />
@@ -31,11 +36,7 @@ const Model3D = () => {
           </div>
         </div>
       </div>
-      <Heading
-        className="md:pt-12 md:pb-7"
-        titleClassName="w-[500px]"
-        title="3D MODEL"
-      />
+     
     </div>
   );
 };

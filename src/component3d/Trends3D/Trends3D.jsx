@@ -35,7 +35,8 @@ const Trends3D = () => {
   };
 
   return (
-    <div id='3d-trends' className='pt-24'>
+    <div id='3d-trends' className='pt-0 pb-5'>
+       <Heading className="pt-5 pb-12 "  titleClassName="w-[500px]" title="3D TRENDS" />
       <div className='container mx-auto'>
         <div className='flex justify-center items-center gap-5 '>
           <button onClick={handlePrev}><MdArrowBackIosNew className='text-3xl -mt-16' /></button>
@@ -64,7 +65,7 @@ const Trends3D = () => {
           <button onClick={handleNext}><MdArrowForwardIos className='text-3xl -mt-16' /></button>
         </div>
       </div>
-     <Heading className="pt-5 pb-12 "  titleClassName="w-[500px]" title="3D TRENDS" />
+    
     </div>
   );
 };
