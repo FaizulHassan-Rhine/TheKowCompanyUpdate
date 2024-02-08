@@ -28,7 +28,7 @@ const Model3D = () => {
             ></ViewModel> */}
    
    <Suspense fallback={<div className="flex justify-center items-center  ">
-  <img className="md:mt-16 " src="/img/shoe2.png"/>
+  <img className="md:mt-16 " src="/img/shoeLogo2.png"/>
    </div>}>
                 <ShoeModel/>
              
