@@ -6,12 +6,12 @@ import blog3 from "../../images/blog3.png"
 import ScrolTop from "../ScrolTop/ScrolTop";
 import Footer from "../footer/footer";
 import Navbar from "../navber/navbar";
-import BlogPageDetails from "./BlogPageDetails";
+import BlogPageDetails from "./BlogPageDetails2D";
 
 import "./style.css"
 
 
-const BlogPage = () => {
+const BlogPage2D = () => {
 
     return (
         <>
@@ -64,4 +64,4 @@ const BlogPage = () => {
     );
 };
 
-export default BlogPage;
+export default BlogPage2D;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import blog4 from "../../images/blog4.png"
 import blog5 from "../../images/blog5.png"
 import blog6 from "../../images/blog6.png"
-const BlogPageDetails = () => {
+const BlogPageDetails3D = () => {
     return (
         <div className='bg-white pt-28'>
             <div className='bg-[#DEE2E2]'>
@@ -20,7 +20,7 @@ const BlogPageDetails = () => {
                                     wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci.......</p>
 
                                 <div className='flex justify-end pt-4 '>
-                                   <Link to="/blog-details">
+                                   <Link to="/3d/industry-trends-details">
                                    <button className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
                                    </Link>
                                 </div>
@@ -52,7 +52,7 @@ const BlogPageDetails = () => {
                                     wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci.......</p>
 
                                 <div className='flex justify-start pt-4 '>
-                                <Link to="/blog-details">
+                                <Link to="/3d/industry-trends-details">
                                    <button className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
                                    </Link>
                                 </div>
@@ -70,7 +70,7 @@ const BlogPageDetails = () => {
                                     wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper susci.......</p>
 
                                 <div className='flex justify-end pt-4 '>
-                                <Link to="/blog-details">
+                                <Link to="/3d/industry-trends-details">
                                    <button className='text-[11px]  font-semibold text-white px-8 py-1 bg-[#7C9C30] rounded-3xl'>Read More</button>
                                    </Link>
                                 </div>
@@ -90,6 +90,6 @@ const BlogPageDetails = () => {
     );
 };
 
-export default BlogPageDetails;
+export default BlogPageDetails3D;
 
 

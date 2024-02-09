@@ -3,7 +3,7 @@ import './App.css'
 
 import { Route, Routes } from 'react-router-dom'
 import HomeContainer from './component/HomeContainer/HomeContainer'
-import BlogPage from './component/BlogPage/BlogPage'
+import BlogPage from './component/BlogPage2D/BlogPage2D'
 import Partnership from './component/Partnership/Partnership'
 import Container2D from './component2d/Container2D/Container2D'
 
@@ -23,6 +23,9 @@ import FashionAccessories from './component3d/FashionAccessories/FashionAccessor
 import TechAccessories from './component3d/TechAccessories/TechAccessories'
 import TechEquipments from './component3d/TechEquipments/TechEquipments'
 import Cosmetics from './component3d/Cosmetics/Cosmetics'
+import TrendsDetails from './component3d/Trends3D/TrendsDetails'
+import BlogPage2D from './component/BlogPage2D/BlogPage2D'
+import BlogPage3D from './component/BlogPage3D/BlogPage3D'
 
 
 
@@ -37,11 +40,13 @@ function App() {
       <Routes>
       <Route path="/" element={<HomeContainer />} />
       <Route path="/contact-us" element={<Contact />} />
-        <Route path="/industry-trends" element={<BlogPage />} />
+        <Route path="/2d/industry-trends" element={<BlogPage2D />} />
+        <Route path="/3d/industry-trends" element={<BlogPage3D />} />
         <Route path="/integrations" element={<Partnership />} />
         <Route path="/2d" element={<Container2D/>} />
         <Route path="/3d" element={<Container3D/>} />
-        <Route path="/blog-details" element={<BlogDetails/>} />
+        <Route path="/2d/industry-trends-details" element={<BlogDetails/>} />
+        <Route path="/3d/industry-trends-details" element={<TrendsDetails/>} />
         <Route path="/exterior-visualization" element={<ExteriorVisualization/>} />
         <Route path="/interior-visualization" element={<InteriorVisualization/>} />
         <Route path="/product-visualiztion-3d" element={<Furniture/>} />
