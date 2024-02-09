@@ -5,19 +5,19 @@ import Heading2D from "../../component3d/Heading/Heading2D";
 const VideoSliderNew = () => {
   const sliderList = [
     {
-      video: "/video/video_2d/Audio_Editing_Service_1.mp4",
+      video: "/video/video_2d/Audio_Editing_Service.mp4",
       label: "Audio Editing Service",
     },
     {
-      video: "/video/video_2d/Subtitile_Addition_Service_1.mp4",
+      video: "/video/video_2d/Subtitile_Addition_Service.mp4",
       label: "Subtitile Addition Service",
     },
     {
-      video: "/video/video_2d/Title_Addition_Service_1.mp4",
+      video: "/video/video_2d/Title_Addition_Service.mp4",
       label: "Title Addition Service",
     },
     {
-      video: "/video/video_2d/Video_Cropping_Service_1.mp4",
+      video: "/video/video_2d/Video_Cropping_Service.mp4",
       label: "Video Cropping  Service",
     },
   ];
