@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import DivSlider from './divSlider';
 import ReactCompareImage from 'react-compare-image';
 import arrowImage from '../../images/arrow.png';
+import { Link } from 'react-router-dom';
 
 const DivSliderParrent = () => {
     const [currentPosition, setCurrentPosition] = useState(0);
@@ -177,7 +178,7 @@ const DivSliderParrent = () => {
                 <p className='text-xs md:text-sm text-center mt-5 mb-10 px-[52px] '>{`Experience a palette of color brilliance, where each hue harmonizes to craft the perfect ambiance for brands. We tailor the product visuals for any platform, making sure your products radiate brilliance, whether on a website, social media, or in print.`}</p>
 
                 <div className='flex justify-center '>
-                    <button className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</button>
+                    <Link to={"/contact-us"} className='text-xs md:text-sm font-semibold text-white px-6 py-1 bg-[#7C9C30] rounded-3xl'>Avail Image Retouching at Scale</Link>
                 </div>
             </div>
         </div>
